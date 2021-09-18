@@ -8,7 +8,9 @@ window.alert('それじゃ元の場所に帰してあげるね！')
 </script>
 <br><br><br><br><br>
 <div style="text-align: center">
-
+<details>
+<summary>戻る</summary>
+<n>
 <p>住所：<br>
 <input type="text" name="address" size="30" placeholder="**************" maxlength = "0"></p>
 <p>クレジットカード番号：<br>
@@ -18,5 +20,31 @@ window.alert('それじゃ元の場所に帰してあげるね！')
 	<br>
 <button type="button" onclick="location.href('https://example.com')">送信</button>
 <br><br><br>
-<button type="button" onclick="window.alert('「送信」で帰れるよ？\n押さないの？')">(・∀・)</button>
+<button type="button" onclick="window.alert('「送信」で戻れるよ？\n押さないの？')">(・∀・)</button>
+</n>
+</details>
 </div>
+
+<style>
+details {
+  font: 16px "Open Sans", Calibri, sans-serif;
+  width: 620px;
+}
+
+details > summary {
+  padding: 2px 6px;
+  width: 15em;
+  border: none;
+  cursor: pointer;
+}
+
+details > n {
+  border-radius: 0 0 10px 10px;
+  padding: 2px 6px;
+  margin: 0;
+}
+
+details[open] > summary {
+  background-color: #ccf;
+}
+</style>
