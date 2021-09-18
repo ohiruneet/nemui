@@ -1,0 +1,26 @@
+<style>
+.a{
+ animation: anim 5s infinite;
+}
+@keyframes anim {
+  0% {
+  transform: translateX(1000px);
+  }
+
+  25% {
+  transform: translateX(1000px) translateY(2000px) ;
+  }
+
+  50% {
+  transform: translateX(300px) translateY(2000px);
+  }
+
+  75% {
+  transform: translateX(300px) translateY(0px);
+  }
+
+  100% {
+  transform: translateX(1000px) translateY(0px);
+  }
+</style>
+<div class="a"><input type="button" value="(*ﾟ∀ﾟ)" style="width:70px;height:50px" onclick="window.alert('おっ！やるね！\nじゃあ次は……');location.href = 'https://example.com';" ></div>
