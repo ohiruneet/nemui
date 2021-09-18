@@ -1,10 +1,10 @@
 <script>
-window.alert('ああ〜楽しかった！')
-window.alert('それじゃ元の場所に帰してあげるね！')
 history.pushState(null, null, location.href);
 window.addEventListener('popstate', (e) => {
   history.go(1);
 });
+window.alert('ああ〜楽しかった！')
+window.alert('それじゃ元の場所に帰してあげるね！')
 </script>
 <br><br><br><br><br>
 <div style="text-align: center">
