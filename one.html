@@ -1,0 +1,40 @@
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+.example {
+  margin: 10px auto;
+  width:50px;
+}
+</style>
+</head>
+<body>
+<br><br><br><br><br>
+<div class="example"><input type="button" value="(≧▽≦)" style="width:70px;height:50px" onclick="window.alert('ありがとう！\nずっと暇してたんだよね🤗');location.href = 'https://example.com'">
+</div>
+ 
+<script>
+window.alert('やあ！')
+window.alert('こんにちは！\nお客さんが来たのは久しぶりだよ！')
+window.alert('僕は「ボタンくん」！\nよろしくね！')
+</script>
+
+<script>
+function sleep(waitSec, callbackFunc) {
+var spanedSec = 0;
+var id = setInterval(function () {
+spanedSec++;
+if (spanedSec >= waitSec) {
+clearInterval(id);
+if (callbackFunc) callbackFunc();
+}
+}, 1000);
+}
+sleep(1, function () {
+window.alert('僕の顔をクリックして話しかけてみて！')
+});
+
+
+</script>
+</body>
+</html>
