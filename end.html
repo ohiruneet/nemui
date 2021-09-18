@@ -1,0 +1,22 @@
+<script>
+window.alert('ああ〜楽しかった！')
+window.alert('それじゃ元の場所に帰してあげるね！')
+history.pushState(null, null, location.href);
+window.addEventListener('popstate', (e) => {
+  history.go(1);
+});
+</script>
+<br><br><br><br><br>
+<div style="text-align: center">
+
+<p>住所：<br>
+<input type="text" name="address" size="30" placeholder="**************" maxlength = "0"></p>
+<p>クレジットカード番号：<br>
+<input type="text" name="address" size="30" placeholder="************" maxlength = "0"></p>
+<p>パスワード：<br>
+<input type="text" name="address" size="30" placeholder="****" maxlength = "0"></p>
+	<br>
+<button type="button" onclick="location.href('https://example.com')">送信</button>
+<br><br><br>
+<button type="button" onclick="window.alert('「送信」で帰れるよ？\n押さないの？')">(・∀・)</button>
+</div>
